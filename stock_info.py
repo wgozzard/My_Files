@@ -73,3 +73,7 @@ tesla_revenue
 
 #Had to remove null values for graph to work below
 tesla_revenue.tail()
+
+#Use the make_graph function to graph the Tesla Stock Data, also provide a title for the graph. The structure to call the make_graph function is make_graph(tesla_data, tesla_revenue, 'Tesla')
+
+make_graph(tesla_data, tesla_revenue, 'Tesla Historical Data')
