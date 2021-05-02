@@ -12,18 +12,21 @@ def enter_category(cat_colab):
   
   if cat_colab == 'Oos' or cat_colab=='oos' or cat_colab =='OOS':
     cat_colab = cat_colab.upper()
-    df_search = df1[(df1['Colab'] == cat_colab)]
+    df_search = df1[(df1['Colab'] == cat_colab)] #change this to what every column you need to pull from
     return df_search
   else:
     x = cat_colab.title()
-    df_search = df1[(df1['Colab'] == x)]
+    df_search = df1[(df1['Colab'] == x)] #change this to the same column
     return df_search
 #file variable above may skip the trial block since the function isn't called
-  try:
+try:
   with open("FILE NAME", "rb") as f:
     print("You are ready to search!")
 except:
   print("PLEASE LOAD What Ever File that's loaded")
+  
+#Call the function so you can search
+enter_category('what ever it is')
   
 #This code will list the key search words that you can use above
 file = 'enter spread sheet file here' 
